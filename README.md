@@ -1,4 +1,6 @@
-# 📐 Leveler App
+# 📐 [Leveler App](https://leveler.purified.app/)
+
+https://leveler.purified.app/
 
 This is a digital bubble level app designed to help you check the level of surfaces with your device.
 

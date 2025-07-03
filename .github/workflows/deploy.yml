@@ -1,0 +1,42 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # This workflow runs when you push to the 'main' branch
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest # Use the latest Ubuntu runner
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20" # Use a stable Node.js version, e.g., '18', '20', or '22'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Angular app
+        # --- FIX HERE: Use npx to execute the local ng command ---
+        run: npx ng build --configuration production --base-href /
+        # --------------------------------------------------------
+
+      - name: Create CNAME file
+        # Assumes your build output is in 'dist' folder
+        # Adjust 'dist' if your build output is in 'build', 'public', etc.
+        run: echo "leveler.purified.app" > dist/leveler/browser/CNAME
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist/leveler/browser # Make sure to replace 'your-project-name' with your actual project name
+          enable_jekyll: true # <-- IMPORTANT: Set this to true for Angular apps!
+
+permissions:
+  contents: write

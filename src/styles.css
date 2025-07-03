@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  background: #222;
+  color: #ddd;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  margin: 0;
+}

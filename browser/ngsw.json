@@ -1,0 +1,81 @@
+{
+  "configVersion": 1,
+  "timestamp": 1751580543768,
+  "index": "/leveler/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/leveler/favicon.ico",
+        "/leveler/index.html",
+        "/leveler/main-L7IHWLDD.js",
+        "/leveler/manifest.webmanifest",
+        "/leveler/styles-52LZ72QY.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/leveler/icons/icon-128x128.png",
+        "/leveler/icons/icon-144x144.png",
+        "/leveler/icons/icon-152x152.png",
+        "/leveler/icons/icon-192x192.png",
+        "/leveler/icons/icon-256x256.png",
+        "/leveler/icons/icon-384x384.png",
+        "/leveler/icons/icon-48x48.png",
+        "/leveler/icons/icon-512x512.png",
+        "/leveler/icons/icon-72x72.png",
+        "/leveler/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/leveler/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
+    "/leveler/icons/icon-128x128.png": "71d0be31b9a313a00bc27b022c01cd16767df3b8",
+    "/leveler/icons/icon-144x144.png": "f3027a0f037e4abdd591b23b1fd80603ac832e67",
+    "/leveler/icons/icon-152x152.png": "b46327150f937926e2df00c9db410df27a2b8a2b",
+    "/leveler/icons/icon-192x192.png": "3c07fc5806a767e706b22c6016c2576adc7186cb",
+    "/leveler/icons/icon-256x256.png": "ed2338a24ddfdc597ba2ff6f808bea8d1f2d93f4",
+    "/leveler/icons/icon-384x384.png": "c90a98f0f42569e9491c517e4c556081e5e055f4",
+    "/leveler/icons/icon-48x48.png": "0c022b43f5e8afbd8a263e3f94e6d3689b53780c",
+    "/leveler/icons/icon-512x512.png": "51277c259e0686869c905afbcd5828ee59d5e943",
+    "/leveler/icons/icon-72x72.png": "8c23a1f967f68a5e843105290f40125afb4ecce6",
+    "/leveler/icons/icon-96x96.png": "f86ef725feb94e5e0ad5e92d6c7820cdf78b163c",
+    "/leveler/index.html": "7f82bb0e7172570ae12c374ae9972a99eed304b6",
+    "/leveler/main-L7IHWLDD.js": "fffece42958d956a8ff8497876ae050ee4961f2a",
+    "/leveler/manifest.webmanifest": "77422733236f3a178924977a77877f7c2e6b537a",
+    "/leveler/styles-52LZ72QY.css": "b4502c953e434ff1ce0d91be4f97ed0d6bfca7e4"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}

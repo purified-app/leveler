@@ -1,7 +1,7 @@
 {
   "configVersion": 1,
-  "timestamp": 1751623773180,
-  "index": "/leveler/index.html",
+  "timestamp": 1751626862345,
+  "index": "/index.html",
   "assetGroups": [
     {
       "name": "app",
@@ -11,11 +11,11 @@
         "ignoreVary": true
       },
       "urls": [
-        "/leveler/favicon.ico",
-        "/leveler/index.html",
-        "/leveler/main-HIG74RHZ.js",
-        "/leveler/manifest.webmanifest",
-        "/leveler/styles-52LZ72QY.css"
+        "/favicon.ico",
+        "/index.html",
+        "/main-HIG74RHZ.js",
+        "/manifest.webmanifest",
+        "/styles-52LZ72QY.css"
       ],
       "patterns": []
     },
@@ -27,37 +27,37 @@
         "ignoreVary": true
       },
       "urls": [
-        "/leveler/icons/icon-128x128.png",
-        "/leveler/icons/icon-144x144.png",
-        "/leveler/icons/icon-152x152.png",
-        "/leveler/icons/icon-192x192.png",
-        "/leveler/icons/icon-256x256.png",
-        "/leveler/icons/icon-384x384.png",
-        "/leveler/icons/icon-48x48.png",
-        "/leveler/icons/icon-512x512.png",
-        "/leveler/icons/icon-72x72.png",
-        "/leveler/icons/icon-96x96.png"
+        "/icons/icon-128x128.png",
+        "/icons/icon-144x144.png",
+        "/icons/icon-152x152.png",
+        "/icons/icon-192x192.png",
+        "/icons/icon-256x256.png",
+        "/icons/icon-384x384.png",
+        "/icons/icon-48x48.png",
+        "/icons/icon-512x512.png",
+        "/icons/icon-72x72.png",
+        "/icons/icon-96x96.png"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "/leveler/favicon.ico": "c0e45df41bb73cdb61326e9de9d017657de80dee",
-    "/leveler/icons/icon-128x128.png": "f709b5e1ff3fee4cb6def2d79455749bdf4d25c9",
-    "/leveler/icons/icon-144x144.png": "ec7f878918e3b2a771ff2c4ffc50c7711f131404",
-    "/leveler/icons/icon-152x152.png": "d521e72309cec09a60e263ddefdba5ad52f530f9",
-    "/leveler/icons/icon-192x192.png": "fceaecb98e241297423b7389675e922c5ea2d1f0",
-    "/leveler/icons/icon-256x256.png": "961f715186749eac4e8bd6d0d9ba77724ac1b678",
-    "/leveler/icons/icon-384x384.png": "06bc7db86fd1273df98af8d43069fc8ce88faeaf",
-    "/leveler/icons/icon-48x48.png": "21218f454140d9f03bac52f5c1600c089959d794",
-    "/leveler/icons/icon-512x512.png": "da8d834e8afb92776e624c76e35a8dcb654550d7",
-    "/leveler/icons/icon-72x72.png": "a9896e8a4a3b14fbd0f2e053a0527ee49c8f70f1",
-    "/leveler/icons/icon-96x96.png": "7612bbca8c136a066d1cf46dd6a2483db2e57c4d",
-    "/leveler/index.html": "d01693c227115757f711157dc4e959e65f1911b5",
-    "/leveler/main-HIG74RHZ.js": "23da71dd9499e3a35816688cbc738916171a3c0e",
-    "/leveler/manifest.webmanifest": "77422733236f3a178924977a77877f7c2e6b537a",
-    "/leveler/styles-52LZ72QY.css": "b4502c953e434ff1ce0d91be4f97ed0d6bfca7e4"
+    "/favicon.ico": "c0e45df41bb73cdb61326e9de9d017657de80dee",
+    "/icons/icon-128x128.png": "f709b5e1ff3fee4cb6def2d79455749bdf4d25c9",
+    "/icons/icon-144x144.png": "ec7f878918e3b2a771ff2c4ffc50c7711f131404",
+    "/icons/icon-152x152.png": "d521e72309cec09a60e263ddefdba5ad52f530f9",
+    "/icons/icon-192x192.png": "fceaecb98e241297423b7389675e922c5ea2d1f0",
+    "/icons/icon-256x256.png": "961f715186749eac4e8bd6d0d9ba77724ac1b678",
+    "/icons/icon-384x384.png": "06bc7db86fd1273df98af8d43069fc8ce88faeaf",
+    "/icons/icon-48x48.png": "21218f454140d9f03bac52f5c1600c089959d794",
+    "/icons/icon-512x512.png": "da8d834e8afb92776e624c76e35a8dcb654550d7",
+    "/icons/icon-72x72.png": "a9896e8a4a3b14fbd0f2e053a0527ee49c8f70f1",
+    "/icons/icon-96x96.png": "7612bbca8c136a066d1cf46dd6a2483db2e57c4d",
+    "/index.html": "b3da63c2b55f8a0805ecb8401dc679edbadf4cd9",
+    "/main-HIG74RHZ.js": "23da71dd9499e3a35816688cbc738916171a3c0e",
+    "/manifest.webmanifest": "77422733236f3a178924977a77877f7c2e6b537a",
+    "/styles-52LZ72QY.css": "b4502c953e434ff1ce0d91be4f97ed0d6bfca7e4"
   },
   "navigationUrls": [
     {

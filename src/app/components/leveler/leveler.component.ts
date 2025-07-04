@@ -4,7 +4,6 @@ import {
   Component,
   ElementRef,
   HostListener,
-  OnInit,
   viewChild,
 } from '@angular/core';
 
@@ -21,12 +20,13 @@ import {
   styleUrl: './leveler.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class LevelerComponent implements OnInit, AfterViewInit {
+export class LevelerComponent implements AfterViewInit {
   readonly canvasRef =
     viewChild.required<ElementRef<HTMLCanvasElement>>('levelCanvas');
   private ctx!: CanvasRenderingContext2D;
   beta = 0;
   gamma = 0;
+
   private betaOffset = 0;
   private gammaOffset = 0;
 
@@ -84,25 +84,11 @@ export class LevelerComponent implements OnInit, AfterViewInit {
     },
   ];
 
-  ngOnInit() {
-    if (
-      typeof DeviceOrientationEvent !== 'undefined' &&
-      typeof (DeviceOrientationEvent as any).requestPermission === 'function'
-    ) {
-      (DeviceOrientationEvent as any)
-        .requestPermission()
-        .then((permissionState: string) => {
-          if (permissionState === 'granted') {
-            console.log('Device orientation permission granted');
-          }
-        })
-        .catch(console.error);
-    }
-  }
-
-  ngAfterViewInit() {
+  async ngAfterViewInit() {
+    await this.grantAccess();
     this.ctx = this.canvasRef().nativeElement.getContext('2d')!;
     this.setCanvasDimensions();
+
     this.drawLeveler(0, 0);
   }
 
@@ -121,12 +107,24 @@ export class LevelerComponent implements OnInit, AfterViewInit {
 
   @HostListener('window:deviceorientation', ['$event'])
   onDeviceOrientation(event: DeviceOrientationEvent) {
-    this.beta = (event.beta || 0) - this.betaOffset;
-    this.gamma = (event.gamma || 0) - this.gammaOffset;
-    this.drawLeveler(this.gamma, this.beta);
+    if (event.beta !== null && event.gamma !== null) {
+      this.beta = event.beta - this.betaOffset;
+      this.gamma = event.gamma - this.gammaOffset;
+      this.drawLeveler(this.gamma, this.beta);
+    }
+  }
+
+  async grantAccess() {
+    const { requestPermission } = DeviceOrientationEvent as any;
+    if (typeof requestPermission === 'function') {
+      try {
+        await requestPermission();
+      } catch (error: any) {}
+    }
   }
 
   calibrate() {
+    this.grantAccess();
     this.betaOffset = this.beta;
     this.gammaOffset = this.gamma;
     this.drawLeveler(0, 0);
